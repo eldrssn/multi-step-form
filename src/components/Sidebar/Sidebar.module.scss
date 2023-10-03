@@ -1,7 +1,7 @@
 @import '/src/styles/breakpoints.scss';
 
 .container {
-	background-image: url('src/assets/images/bg-sidebar-desktop.svg');
+	background-image: url('/images/bg-sidebar-desktop.svg');
 	background-repeat: no-repeat;
 	background-size: cover;	
 	min-width: 275px;
@@ -19,7 +19,7 @@
 @media screen and (max-width: $mobile) {
   .container {
     flex-direction: row;
-    background-image: url('src/assets/images/bg-sidebar-mobile.svg');
+    background-image: url('/images/bg-sidebar-mobile.svg');
     min-width: 100vw;
     width: auto;
     height: auto;
