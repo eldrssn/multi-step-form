@@ -7,6 +7,7 @@
 	border-radius: 20px;
 	background-color: $white;
 	padding: 20px;
+  margin: 20px;
 
 	display: flex;
 	gap: 17px;
@@ -14,6 +15,7 @@
 
 @media screen and (max-width: $mobile) {
   .section {
+    margin: 0;
     width: auto;
     min-height: 100%;
     flex-direction: column;

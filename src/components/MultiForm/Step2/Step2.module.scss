@@ -41,11 +41,14 @@
   }
 }
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $tablet) {
   .plans {
     flex-direction: column;
     gap: 10px;
   }
+}
+
+@media screen and (max-width: $mobile) {
   .buttons {
     position: fixed;
     bottom: 0;
