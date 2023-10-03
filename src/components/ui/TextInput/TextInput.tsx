@@ -15,12 +15,13 @@ const TextInput: FC<TTextInput> = ({ formik, input }) => {
       })}
     >
       <div className={styles.label_box}>
-        <label htmlFor="name">{label}</label>
+        <label htmlFor={name}>{label}</label>
         {isError ? (
           <div className={styles.error}>{formik.errors[name]}</div>
         ) : null}
       </div>
       <input
+        id={name}
         type={type}
         placeholder={placeholder}
         name={name}
