@@ -1,0 +1,37 @@
+@import '/src/styles/breakpoints.scss';
+@import '/src/styles/colors.scss';
+
+.buttons {
+	position: absolute;
+	bottom: 0;
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.addons {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.info {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: $mobile) {
+
+  .addons {
+    gap: 10px;
+  }
+
+  .buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $white;
+    padding: 15px;
+  }
+}

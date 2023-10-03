@@ -1,0 +1,68 @@
+@import '/src/styles/colors.scss';
+@import '/src/styles/breakpoints.scss';
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: $marine-blue;
+
+  .label_box {
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+    .error {
+      font-weight: 700;
+      color: $strawberry-red;
+    }
+
+    label {
+      font-weight: 500;
+    }
+  }
+
+  input {
+    outline: none;
+    color: inherit;
+
+    border: 1px solid $light-gray;
+    padding: 14px 14px;
+    border-radius: 8px;
+
+    &::placeholder {
+      color: $light-gray;
+    }
+
+    &[type="number"]::-webkit-inner-spin-button,
+    &[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &_error {
+    input {
+      border: 1px solid $strawberry-red;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .input {
+    gap: 4px;
+    .label_box {
+      font-size: 12px;
+
+      label, .error {
+        font-size: 12px;
+      }
+    }
+
+    input { 
+      border-radius: 4px;
+      padding: 10px 14px;
+    }
+  }
+}

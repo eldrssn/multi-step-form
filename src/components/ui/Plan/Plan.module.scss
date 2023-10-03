@@ -1,0 +1,56 @@
+@import '/src/styles/colors.scss';
+@import '/src/styles/breakpoints.scss';
+
+.plan_box {
+  flex-basis: 33%;
+  border: 1px solid $light-gray;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 18px 15px;
+
+  &:hover, &.checked {
+    border: 1px solid $marine-blue;
+    background-color: $alabaster;
+  }
+
+  input {
+    display: none;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .icon {
+    margin-bottom: 39px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .price {
+    opacity: 50%;
+    font-size: 14px;
+  }
+  .special {
+    margin-top: 4px;
+    color: $marine-blue;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .plan_box {
+    flex-basis: unset;
+    display: flex;
+
+    gap: 10px;
+    
+    .icon {
+      margin-bottom: 0;
+    }
+  }
+}

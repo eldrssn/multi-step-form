@@ -1,0 +1,57 @@
+@import '/src/styles/colors.scss';
+@import '/src/styles/breakpoints.scss';
+
+.buttons {
+	position: absolute;
+	bottom: 0;
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+  gap: 17px;
+  margin-bottom: 30px;
+}
+
+.period {
+  display: flex;
+  background-color: $alabaster;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 15px 0;
+}
+
+.option {
+  font-size: 14px;
+  opacity: 50%;
+
+  &.choosen {
+    opacity: 100%;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .plans {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $white;
+    padding: 15px;
+  }
+}

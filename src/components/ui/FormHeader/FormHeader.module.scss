@@ -1,0 +1,25 @@
+@import '/src/styles/colors.scss';
+@import '/src/styles/breakpoints.scss';
+
+.title {
+	font-size: 32px;
+	color: $marine-blue;
+	margin-bottom: 14px;
+}
+
+.description {
+	font-size: 16px;
+	color: $cool-gray;
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: $mobile) {
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    line-height: 150%;
+    margin-bottom: 20px;
+  }
+}

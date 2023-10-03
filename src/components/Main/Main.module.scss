@@ -1,0 +1,26 @@
+@import '/src/styles/breakpoints.scss';
+@import '/src/styles/colors.scss';
+
+.section {
+	width: 950px;
+	min-height: 600px;
+	border-radius: 20px;
+	background-color: $white;
+	padding: 20px;
+
+	display: flex;
+	gap: 17px;
+}
+
+@media screen and (max-width: $mobile) {
+  .section {
+    width: auto;
+    min-height: 100%;
+    flex-direction: column;
+    width: auto;
+    border-radius: unset;
+    background-color: unset;
+    padding: 0;
+    gap: 0;
+  }
+}

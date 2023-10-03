@@ -1,0 +1,101 @@
+@import '/src/styles/colors.scss';
+@import '/src/styles/breakpoints.scss';
+
+.addon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+
+  border: 1px solid $light-gray;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 18px 15px;
+  padding-left: 24px;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  &:hover,
+  &.checked {
+    border: 1px solid $marine-blue;
+    background-color: $alabaster;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 4px;
+    flex-grow: 1;
+  }
+
+  .title {
+    color: $marine-blue;
+    font-weight: 700;
+  }
+
+  .description {
+    opacity: 50%;
+    font-size: 14px;
+  }
+
+  .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $light-gray;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+  }
+
+  input[type="checkbox"]:checked+.checkmark {
+    background-color: $purplish-blue;
+    border-color: $purplish-blue;
+  }
+
+  .checkmark::before {
+    content: '';
+    background-image: url('src/assets/images/icon-checkmark.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 2px;
+  }
+
+  input[type="checkbox"]:checked+.checkmark::before {
+    display: block;
+  }
+
+  .price {
+    color: $purplish-blue;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .addon {
+    gap: 6px;
+    padding: 18px 15px;
+
+    .info {
+      .title {
+        font-size: 14px;
+      }
+
+      .description {
+        font-size: 12px;
+      }
+    }
+    
+    .price { 
+      font-size: 12px;
+    }
+  }
+}

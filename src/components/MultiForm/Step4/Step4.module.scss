@@ -1,0 +1,124 @@
+@import '/src/styles/colors.scss';
+@import '/src/styles/breakpoints.scss';
+
+.buttons {
+	position: absolute;
+	bottom: 0;
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info {
+  background-color: $alabaster;
+  padding: 20px 25px;
+  border-radius: 8px;
+  color: $marine-blue;
+}
+
+.plan_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $light-gray;
+}
+
+.plan_box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.plan_title {
+  font-size: 15px;
+}
+
+.plan_price {
+  font-size: 16px;
+}
+.plan_price, .plan_title {
+  font-weight: 700;
+}
+
+.change_button {
+  color: $cool-gray;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.addons_info {
+  display: flex;
+  flex-direction: column;
+  gap:22px;
+}
+
+.addon {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.addon_title {
+  color: $cool-gray;
+  font-size: 14px;
+}
+
+.addon_price {
+  font-size: 14px;
+}
+
+.total_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 25px;
+  align-items: center;
+}
+
+.total_title {
+  color: $cool-gray;
+  font-size: 14px;
+}
+
+.total_price {
+  font-size: 20px;
+  font-weight: 700;
+  color: $purplish-blue;
+}
+
+@media screen and (max-width: $mobile) {
+  .info, .total_info {
+    padding: 20px 15px;
+  }
+
+  .plan_box {
+    gap: 2px;
+  }
+
+  .plan_info {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .plan_price {
+    font-size: 14px;
+  }
+
+  .addons_info {
+    gap: 16px;
+  }
+  
+  .total_price { 
+    font-size: 16px;
+  }
+
+  .buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $white;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,54 @@
+@import '/src/styles/colors.scss';
+@import '/src/styles/breakpoints.scss';
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 30px;
+
+  .icon_box {
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    color: $cool-gray;
+    text-align: center;
+    line-height: 150%;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .block {
+    padding-top: 50px;
+
+    .icon_box {
+      width: 55px;
+      height: 55px;
+      position: relative;
+
+      margin-bottom: 22px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      line-height: 160%;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import '/src/styles/colors.scss';
+@import '/src/styles/breakpoints.scss';
+
+.button {
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.button_back {
+	color: $cool-gray;
+
+	&:hover {
+		color: $marine-blue;
+	}
+}
+
+.button_next, .button_confirm {
+	color: $white;
+	padding: 15px 26px;
+	border-radius: 10px;
+	width: 125px;
+}
+
+.button_next {
+	background-color: $marine-blue;
+	margin-left: auto;
+
+	&:hover {
+		background-color: $marine-blue-hover;
+	}
+}
+
+.button_confirm {
+	background-color: $purplish-blue;
+	
+	&:hover {
+		background-color: $purplish-blue-hover;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+  .button {
+    font-size: 14px;
+  }
+
+  .button_next, .button_confirm {
+    border-radius: 6px;
+    padding: 13px 18px;
+    width: 100px;
+  }
+}

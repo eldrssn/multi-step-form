@@ -1,0 +1,33 @@
+@import '/src/styles/breakpoints.scss';
+@import '/src/styles/colors.scss';
+
+.buttons {
+	position: absolute;
+	bottom: 0;
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+@media screen and (max-width: $mobile) {
+  .form {
+    gap: 15px;
+    position: relative;
+  }
+
+  .buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $white;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,40 @@
+@import '/src/styles/colors.scss';
+@import '/src/styles/breakpoints.scss';
+
+.container {
+	width: 100%;
+	padding: 40px 84px;
+	padding-bottom: 16px;
+}
+
+.form_box {
+	position: relative;
+	height: 100%;
+}
+
+.buttons {
+	position: absolute;
+	bottom: 0;
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+@media screen and (max-width: $mobile) {
+  .container {
+    border-radius: 10px;
+    width: auto;
+    padding: 30px 25px;
+    background-color: $white;
+    margin: 15px;
+    margin-top: -65px;
+    margin-bottom: 100px;
+  }
+}
