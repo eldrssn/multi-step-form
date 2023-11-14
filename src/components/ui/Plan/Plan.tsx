@@ -1,5 +1,7 @@
 import { FC } from 'react';
 import clsx from 'clsx';
+
+import { getEnding } from '@/utils';
 import { TPlan } from './types';
 import styles from './Plan.module.scss';
 
@@ -10,7 +12,7 @@ const Plan: FC<TPlan> = ({
   isChecked,
 }) => (
   <label
-    key={title}
+    data-testid="plan"
     className={clsx(styles.plan_box, {
       [styles.checked]: isChecked,
     })}
@@ -33,7 +35,7 @@ const Plan: FC<TPlan> = ({
     <div className={styles.description}>
       <p className={styles.title}>{title}</p>
       <p className={styles.price}>
-        ${isYearly ? priceYearly : priceMonthly}/{isYearly ? 'yr' : 'mo'}
+        ${isYearly ? priceYearly : priceMonthly}/{getEnding(isYearly)}
       </p>
       {isYearly ? <p className={styles.special}>2 months free</p> : <></>}
     </div>

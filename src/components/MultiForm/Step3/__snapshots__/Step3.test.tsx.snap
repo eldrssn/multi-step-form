@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Step3 renders Step3 component correctly 1`] = `
+<div>
+  <div>
+    <h1
+      class="title"
+    >
+      Pick add-ons
+    </h1>
+    <p
+      class="description"
+    >
+      Add-ons help enhance your gaming experience.
+    </p>
+    <form>
+      <div
+        class="addons"
+      >
+        <label
+          class="addon"
+          data-testid="addon"
+        >
+          <input
+            type="checkbox"
+          />
+          <span
+            class="checkmark"
+          />
+          <div
+            class="info"
+          >
+            <p
+              class="title"
+            >
+              Online service
+            </p>
+            <p
+              class="description"
+            >
+              Access to multiplayer games
+            </p>
+          </div>
+          <p
+            class="price"
+          >
+            +$
+            1
+            /
+            mo
+          </p>
+        </label>
+        <label
+          class="addon"
+          data-testid="addon"
+        >
+          <input
+            type="checkbox"
+          />
+          <span
+            class="checkmark"
+          />
+          <div
+            class="info"
+          >
+            <p
+              class="title"
+            >
+              Larger storage
+            </p>
+            <p
+              class="description"
+            >
+              Extra 1TB of cloud save
+            </p>
+          </div>
+          <p
+            class="price"
+          >
+            +$
+            2
+            /
+            mo
+          </p>
+        </label>
+        <label
+          class="addon"
+          data-testid="addon"
+        >
+          <input
+            type="checkbox"
+          />
+          <span
+            class="checkmark"
+          />
+          <div
+            class="info"
+          >
+            <p
+              class="title"
+            >
+              Customizable Profile
+            </p>
+            <p
+              class="description"
+            >
+              Custom theme on your profile
+            </p>
+          </div>
+          <p
+            class="price"
+          >
+            +$
+            2
+            /
+            mo
+          </p>
+        </label>
+      </div>
+      <div
+        class="buttons"
+      >
+        <button
+          class="button button_back"
+          type="button"
+        >
+          Go Back
+        </button>
+        <button
+          class="button button_next"
+          type="submit"
+        >
+          Next Step
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

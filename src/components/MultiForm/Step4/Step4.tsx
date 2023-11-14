@@ -8,8 +8,11 @@ import { Success } from '../Finish';
 import { TStep } from '../types';
 import { getAddOns, getAddonPrice, getPlanPrice } from './utils';
 import styles from './Step4.module.scss';
+import { useStepContext } from '@/hooks/useStepContext';
 
 const Step4: FC<TStep> = ({ handleBack, data }) => {
+  const { setStep } = useStepContext();
+
   const [isSuccess, setIsSuccess] = useState(false);
   const { step2Data, step3Data } = data;
   const selectedPlan = step2Data?.selectedPlan;
@@ -27,6 +30,8 @@ const Step4: FC<TStep> = ({ handleBack, data }) => {
     console.log(data);
   };
 
+  const handleChangePlane = () => setStep(2);
+
   if (isSuccess) {
     return <Success />;
   }
@@ -43,7 +48,12 @@ const Step4: FC<TStep> = ({ handleBack, data }) => {
             <p className={styles.plan_title}>
               {selectedPlan} ({isYearly ? 'Yearly' : 'Monthly'})
             </p>
-            <p className={styles.change_button}>Change</p>
+            <button
+              className={styles.change_button}
+              onClick={handleChangePlane}
+            >
+              Change
+            </button>
           </div>
           <span className={styles.plan_price}>
             ${planPrice}/{getEnding(isYearly)}

@@ -11,7 +11,7 @@ export const step1: TFormStep[] = [
     name: 'email',
     label: 'Email Address',
     placeholder: 'e.g. stephenking@lorem.com',
-    type: '',
+    type: 'text',
   },
   {
     name: 'phone',

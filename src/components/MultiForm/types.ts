@@ -22,8 +22,3 @@ export type TStep = {
   handleNext?: (stepData: Partial<TData>) => void;
   data: TData;
 };
-
-export type TMultiForm = {
-  step: number;
-  setStep: React.Dispatch<React.SetStateAction<number>>;
-};

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`title and step is correct title matches 1`] = `
+<div>
+  <div
+    class="box"
+  >
+    <div
+      class="number"
+    >
+      1
+    </div>
+    <div
+      class="info"
+    >
+      <p
+        class="info_number"
+      >
+        Step 
+        1
+      </p>
+      <p
+        class="info_title"
+      >
+        Title
+      </p>
+    </div>
+  </div>
+</div>
+`;

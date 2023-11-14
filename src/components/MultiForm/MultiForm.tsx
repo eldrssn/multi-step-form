@@ -5,8 +5,9 @@ import { Step2 } from './Step2';
 import { Step3 } from './Step3';
 import { Step4 } from './Step4';
 
-import { TData, TMultiForm, TStep } from './types';
+import { TData, TStep } from './types';
 import styles from './MultiForm.module.scss';
+import { useStepContext } from '@/hooks/useStepContext';
 
 const FORM_STEPS: Record<number, FC<TStep>> = {
   1: Step1,
@@ -15,7 +16,9 @@ const FORM_STEPS: Record<number, FC<TStep>> = {
   4: Step4,
 };
 
-const MultiForm: FC<TMultiForm> = ({ step, setStep }) => {
+const MultiForm: FC = () => {
+  const { step, setStep } = useStepContext();
+
   const [data, setData] = useState<TData>({
     step1Data: null,
     step2Data: null,

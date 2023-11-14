@@ -43,9 +43,11 @@
 }
 
 .change_button {
+  all: unset;
   color: $cool-gray;
   text-decoration: underline;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .addons_info {

@@ -1,12 +1,14 @@
 import clsx from 'clsx';
 import { FC } from 'react';
+import { useField } from 'formik';
 
 import { TTextInput } from './types';
 import styles from './TextInput.module.scss';
 
-const TextInput: FC<TTextInput> = ({ formik, input }) => {
-  const { type, placeholder, name, label } = input;
-  const isError = formik.touched[name] && formik.errors[name];
+const TextInput: FC<TTextInput> = ({ input }) => {
+  const { name, label } = input;
+  const [field, meta] = useField(input);
+  const isError = meta.touched && meta.error;
 
   return (
     <div
@@ -16,19 +18,9 @@ const TextInput: FC<TTextInput> = ({ formik, input }) => {
     >
       <div className={styles.label_box}>
         <label htmlFor={name}>{label}</label>
-        {isError ? (
-          <div className={styles.error}>{formik.errors[name]}</div>
-        ) : null}
+        {isError ? <div className={styles.error}>{meta.error}</div> : null}
       </div>
-      <input
-        id={name}
-        type={type}
-        placeholder={placeholder}
-        name={name}
-        onBlur={formik.handleBlur}
-        onChange={formik.handleChange}
-        value={formik.values[name]}
-      />
+      <input id={name} {...field} {...input} />
     </div>
   );
 };
