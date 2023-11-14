@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checking the plan display when selecting if it is checked 1`] = `
+<div>
+  <label
+    class="plan_box checked"
+    data-testid="plan"
+  >
+    <img
+      alt="icon"
+      class="icon"
+      height="40px"
+      src="src/icon.svg"
+      width="40px"
+    />
+    <input
+      checked=""
+      class="box"
+      name="plan"
+      type="radio"
+      value="Title"
+    />
+    <div
+      class="description"
+    >
+      <p
+        class="title"
+      >
+        Title
+      </p>
+      <p
+        class="price"
+      >
+        $
+        100
+        /
+        yr
+      </p>
+      <p
+        class="special"
+      >
+        2 months free
+      </p>
+    </div>
+  </label>
+</div>
+`;

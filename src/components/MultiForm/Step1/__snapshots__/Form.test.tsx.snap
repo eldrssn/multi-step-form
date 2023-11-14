@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form renders the form with TextInput and Button 1`] = `
+<div>
+  <form
+    class="form"
+  >
+    <div
+      class="input"
+    >
+      <div
+        class="label_box"
+      >
+        <label
+          for="name"
+        >
+          Name
+        </label>
+      </div>
+      <input
+        id="name"
+        label="Name"
+        name="name"
+        placeholder="e.g. Stephen King"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="input"
+    >
+      <div
+        class="label_box"
+      >
+        <label
+          for="email"
+        >
+          Email Address
+        </label>
+      </div>
+      <input
+        id="email"
+        label="Email Address"
+        name="email"
+        placeholder="e.g. stephenking@lorem.com"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="input"
+    >
+      <div
+        class="label_box"
+      >
+        <label
+          for="phone"
+        >
+          Phone Number
+        </label>
+      </div>
+      <input
+        id="phone"
+        label="Phone Number"
+        name="phone"
+        placeholder="e.g. +1 234 567 890"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      class="buttons"
+    >
+      <button
+        class="button button_next"
+        type="submit"
+      >
+        Next Step
+      </button>
+    </div>
+  </form>
+</div>
+`;

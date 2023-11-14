@@ -7,6 +7,7 @@ import styles from './AddOn.module.scss';
 
 const AddOn: FC<TAddOn> = ({ addOn, onChange, isChecked, isYearly }) => (
   <label
+    data-testid="addon"
     className={clsx(styles.addon, {
       [styles.checked]: isChecked,
     })}

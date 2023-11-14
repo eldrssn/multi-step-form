@@ -6,10 +6,6 @@ function App() {
   return (
     <main className={styles.main}>
       <Main />
-      {/* <section>
-        <aside></aside>
-        <div></div>
-      </section> */}
     </main>
   );
 }

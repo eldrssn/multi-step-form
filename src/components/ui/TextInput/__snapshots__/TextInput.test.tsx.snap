@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input 1`] = `
+<div>
+  <div
+    class="input"
+  >
+    <div
+      class="label_box"
+    >
+      <label
+        for="name"
+      >
+        Name
+      </label>
+    </div>
+    <input
+      id="name"
+      label="Name"
+      name="name"
+      placeholder="Enter your name"
+      type="text"
+      value="Jane"
+    />
+  </div>
+</div>
+`;

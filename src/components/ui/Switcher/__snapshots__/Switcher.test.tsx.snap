@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correct display Switcher when switching if position is off 1`] = `
+<div>
+  <label
+    class="toggle_switch"
+  >
+    <input
+      class="toggle_input"
+      type="checkbox"
+    />
+    <span
+      class="slider"
+    />
+  </label>
+</div>
+`;

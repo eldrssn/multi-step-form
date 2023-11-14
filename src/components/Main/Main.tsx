@@ -1,17 +1,15 @@
-import { useState } from 'react';
 import { MultiForm } from '../MultiForm';
 import { Sidebar } from '../Sidebar';
 import styles from './Main.module.scss';
+import { StepProvider } from '@/context/StepContext';
 
-const Main = () => {
-  const [step, setStep] = useState(1);
-
-  return (
+const Main = () => (
+  <StepProvider>
     <section className={styles.section}>
-      <Sidebar step={step} />
-      <MultiForm step={step} setStep={setStep} />
+      <Sidebar />
+      <MultiForm />
     </section>
-  );
-};
+  </StepProvider>
+);
 
 export { Main };
