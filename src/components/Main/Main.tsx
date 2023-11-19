@@ -1,7 +1,7 @@
+import { StepProvider } from '@/context/StepContext';
 import { MultiForm } from '../MultiForm';
 import { Sidebar } from '../Sidebar';
 import styles from './Main.module.scss';
-import { StepProvider } from '@/context/StepContext';
 
 const Main = () => (
   <StepProvider>

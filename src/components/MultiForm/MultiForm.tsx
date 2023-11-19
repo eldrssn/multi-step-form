@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
 
+import { useStepContext } from '@/hooks/useStepContext';
 import { Step1 } from './Step1';
 import { Step2 } from './Step2';
 import { Step3 } from './Step3';
@@ -7,7 +8,6 @@ import { Step4 } from './Step4';
 
 import { TData, TStep } from './types';
 import styles from './MultiForm.module.scss';
-import { useStepContext } from '@/hooks/useStepContext';
 
 const FORM_STEPS: Record<number, FC<TStep>> = {
   1: Step1,

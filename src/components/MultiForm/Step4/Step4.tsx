@@ -3,12 +3,12 @@ import { FC, useState } from 'react';
 import { getEnding } from '@/utils';
 import { Button } from '@components/ui/Button';
 import { FormHeader } from '@components/ui/FormHeader';
+import { useStepContext } from '@/hooks/useStepContext';
 
 import { Success } from '../Finish';
 import { TStep } from '../types';
 import { getAddOns, getAddonPrice, getPlanPrice } from './utils';
 import styles from './Step4.module.scss';
-import { useStepContext } from '@/hooks/useStepContext';
 
 const Step4: FC<TStep> = ({ handleBack, data }) => {
   const { setStep } = useStepContext();
